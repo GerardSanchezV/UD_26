@@ -37,10 +37,10 @@ drop table if exists suministra;
 	insert into piezas (nombre) values ("Placa");
 	insert into piezas (nombre) values ("Motor");
 	
-	insert into suministra (precio, codigo_pieza, id_proveedor) values (15, 1, "1234"),
-	insert into suministra (precio, codigo_pieza, id_proveedor) values (20, 2, "2234"),
-	insert into suministra (precio, codigo_pieza, id_proveedor) values (50, 3, "3234"),
-	insert into suministra (precio, codigo_pieza, id_proveedor) values (75, 4, "4234"),
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (15, 1, "1234");
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (20, 2, "2234");
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (50, 3, "3234");
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (75, 4, "4234");
 	insert into suministra (precio, codigo_pieza, id_proveedor) values (100, 5, "5234");
 	
 	
