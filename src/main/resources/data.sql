@@ -25,23 +25,25 @@ drop table if exists suministra;
 	on update cascade
 	);
 	
-	insert into proveedores values
-	('1234', "Empresa1"),
-	('2234', "Empresa2"),
-	('3234', "Empresa3"),
-	('4234', "Empresa4"),
-	('5234', "Empresa5");
+	insert into (id_proveedor, nombre) proveedores values ('1234', "Empresa1"),
+	insert into (id_proveedor, nombre) proveedores values ('2234', "Empresa2"),
+	insert into (id_proveedor, nombre) proveedores values ('3234', "Empresa3"),
+	insert into (id_proveedor, nombre) proveedores values ('4234', "Empresa4"),
+	insert into (id_proveedor, nombre) proveedores values ('5234', "Empresa5");
 	
-	insert into piezas values
-	("Gerard.S"),
-	("Aida.Q"),
-	("Constantin.V"),
-	("Gerard.V"),
-	("Pedro.L");
+	insert into piezas (nombre) values ("Martillo");
+	insert into piezas (nombre) values ("Clavo");
+	insert into piezas (nombre) values ("Tornillo");
+	insert into piezas (nombre) values ("Placa");
+	insert into piezas (nombre) values ("Motor");
 	
-	insert into suministra (precio, codigo_pieza, id_proveedor) values
-	(10, 1, "1234"),
-	(20, 2, "2234"),
-	(30, 3, "3234"),
-	(40, 4, "4234"),
-	(50, 5, "5234");
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (15, 1, "1234"),
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (20, 2, "2234"),
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (50, 3, "3234"),
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (75, 4, "4234"),
+	insert into suministra (precio, codigo_pieza, id_proveedor) values (100, 5, "5234");
+	
+	
+
+	
+	

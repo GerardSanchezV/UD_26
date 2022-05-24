@@ -5,11 +5,12 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
@@ -19,12 +20,13 @@ public class Proveedor {
 
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name = "nombre")
 	private String nombre;
 	
 	@OneToMany
-    @JoinColumn(name="id")
+    @JoinColumn(name="id_proveedor")
     private List<Suministra> suministra;
 	
 	//Constructores

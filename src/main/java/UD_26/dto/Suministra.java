@@ -1,6 +1,5 @@
 package UD_26.dto;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,24 +9,28 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+
+
 @Entity
 @Table(name="suministra")
 public class Suministra {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	
 	@ManyToOne
     @JoinColumn(name = "id_proveedor")
     Proveedor proveedor;
- 
-    @ManyToOne
+	
+	
+	@ManyToOne
     @JoinColumn(name = "codigo_pieza")
-    Pieza pieza;
+	Pieza pieza;
 	
 	@Column(name = "precio")
 	private int precio;
-	private int id;
+	
 	public Suministra() {
 		
 		}
